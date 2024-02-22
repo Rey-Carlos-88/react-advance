@@ -18,20 +18,20 @@ const Lazy3 = lazy(() => import(/* webpackChunkName: 'LazyPage3' */ '../01-lazyl
 export const routes = [
     {
         to: '/lazy1',
-        path: 'azy-1',
+        path: 'lazy-1',
         Component: Lazy1,
-        name: 'Lazy-Page-1'
+        name: 'Lazy-1'
     },
     {
         to: '/lazy2',
         path: 'lazy-2',
         Component: Lazy2,
-        name: 'Lazy-Page-2'
+        name: 'Lazy-2'
     },
     {
         to: '/lazy3',
         path: 'lazy-3',
         Component: LazyPage1,
-        name: 'Lazy-Page-3'
+        name: 'Lazy-3'
     }
 ];

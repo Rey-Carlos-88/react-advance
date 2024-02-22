@@ -15,7 +15,7 @@ export const Navigation = () => {
 
                         <ul>
                             {
-                                routes.map( ({ to, name })=> (
+                                routes.map( ({ to, name }) => (
                                     <li key={ to }>
                                         <NavLink 
                                             to={ to } 
