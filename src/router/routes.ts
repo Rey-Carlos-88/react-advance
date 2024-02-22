@@ -1,5 +1,4 @@
 import { lazy, LazyExoticComponent } from 'react';
-//import { LazyPage1, LazyPage2, LazyPage3 } from '../01-lazyload/pages/index';
 import { LazyPage1 } from '../01-lazyload/pages';
 
 type JSXComponent = () => JSX.Element;
@@ -8,7 +7,6 @@ interface Route {
     to: string;
     path: string;
     Component: LazyExoticComponent<JSXComponent> | JSX.Element;
-    //Component: () => JSX.Element
     name: string;
 }
 

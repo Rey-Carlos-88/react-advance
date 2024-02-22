@@ -5,8 +5,6 @@ import { routes } from './routes';
 
 import logo from '../logo.svg'
 
-import {LazyPage1, LazyPage2, LazyPage3 } from '../01-lazyload/pages'
-
 export const Navigation = () => {
     return (
         <Suspense fallback={ <span>Loding ...</span>}>
@@ -33,10 +31,7 @@ export const Navigation = () => {
                     </nav>
 
                     <Routes>
-                        <Route path='Lazy1' element={ <LazyPage1/>} />
-                        <Route path='Lazy2' element={ <LazyPage2/>} />
-                        <Route path='Lazy3' element={ <LazyPage3/>} />
-                        {/*{
+                        {
                             routes.map( ({ path, Component }) => (
                                 <Route
                                     key={ path }
@@ -44,9 +39,7 @@ export const Navigation = () => {
                                     element={<Component /> } 
                                 />
                             ))
-                        } */}
-                        
-
+                        }
                         <Route path='/*' element={ <Navigate to={ routes[0].to }  replace /> } />
                     </Routes>
 
