@@ -1,9 +1,11 @@
 import { Navigation } from "./router/Navigation";
+import imagenFondo from "./login.jpeg";
 
 function App() {
   return (
     <>
-      <Navigation/>
+      {/* <img className='fondo-pantalla' src={imagenFondo} /> */}
+      <Navigation />
     </>
   );
 }
